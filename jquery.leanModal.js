@@ -46,6 +46,12 @@
         		
         		});
 
+            var top_position = $(modal_id).offset().top + "px";
+            $(modal_id).css({
+              'position' : 'absolute',
+              'top': top_position
+            });
+
         		$(modal_id).fadeTo(200,1);
 
                 e.preventDefault();
